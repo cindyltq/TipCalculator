@@ -22,7 +22,8 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int dollar=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
         public static final int action_settings=0x7f08000a;
@@ -31,9 +32,9 @@ public final class R {
         public static final int bt20=0x7f080005;
         public static final int buttonContainer=0x7f080002;
         public static final int etAmount=0x7f080001;
-        public static final int sbPercentage=0x7f080006;
+        public static final int sbPercentage=0x7f080007;
         public static final int tvEnterAmount=0x7f080000;
-        public static final int tvPercentage=0x7f080007;
+        public static final int tvPercentage=0x7f080006;
         public static final int tvTipLabel=0x7f080009;
         public static final int tvTipValue=0x7f080008;
     }
@@ -47,6 +48,7 @@ public final class R {
         public static final int action_settings=0x7f050008;
         public static final int app_name=0x7f050000;
         public static final int enter_amount=0x7f050001;
+        public static final int enter_numeric=0x7f050009;
         public static final int fifteenPercent=0x7f050005;
         public static final int percentage_is=0x7f050003;
         public static final int select_percentage=0x7f050007;

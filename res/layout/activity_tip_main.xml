@@ -12,6 +12,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_alignBottom="@+id/etAmount"
+		android:drawableRight="@drawable/dollar"
 		android:text="@string/enter_amount"
 		android:textAppearance="?android:attr/textAppearanceLarge" />
 	<EditText
@@ -21,32 +22,38 @@
 		android:layout_alignParentTop="true"
 		android:layout_marginTop="29dp"
 		android:layout_toRightOf="@+id/tvEnterAmount"
-		android:ems="15"
-		android:textAppearance="?android:attr/textAppearanceLarge" />
+		android:inputType="number"
+		android:ems="15" 
+		android:imeOptions="actionDone"/>
 	<LinearLayout
 		android:id="@+id/buttonContainer"
-		android:layout_width="200dp"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/etAmount"
-		android:layout_centerHorizontal="true"
+		android:layout_width="250dp"
+		android:layout_height="100dp" 
 		android:layout_marginLeft="20dp"
-		android:layout_marginRight="20dp"
-		android:layout_marginTop="20dp"
-		android:orientation="horizontal" >
+		android:layout_marginRight="350dp"
+		android:layout_marginTop="50dp"
+		android:orientation="horizontal" 
+		android:layout_below="@+id/etAmount" >
 		<Button
 			android:id="@+id/bt10"
 			style="?android:attr/buttonStyle"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_gravity="center_horizontal"
-			android:layout_marginTop="87dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:background="#33B5E5"
 			android:onClick="calculateTip10"
-			android:text="@string/tenPercent" />
+			android:text="@string/tenPercent"
+			android:textColor="#FFFFFF" />
 		<Button
 			android:id="@+id/bt15"
 			style="?android:attr/buttonStyle"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
+			android:layout_marginRight="15dp"
+			android:textColor="#FFFFFF"
+			android:background="#33B5E5"
 			android:onClick="calculateTip15"
 			android:text="@string/fifteenPercent" />
 		<Button
@@ -55,23 +62,27 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:onClick="calculateTip20"
+			android:textColor="#FFFFFF"
+			android:background="#33B5E5"
 			android:text="@string/twentyPercent" />
 	</LinearLayout>
-	<SeekBar
-		android:id="@+id/sbPercentage"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/buttonContainer"
-		android:max="100"
-		android:progress="15" />
 	<TextView
 		android:id="@+id/tvPercentage"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/sbPercentage"
+		android:layout_below="@+id/buttonContainer"
 		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="20dp"
 		android:text="@string/percentage_is"
 		android:textAppearance="?android:attr/textAppearanceLarge" />
+	<SeekBar
+		android:id="@+id/sbPercentage"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvPercentage"
+		android:max="100"
+		android:progress="30" />
+	
 	<TextView
 		android:id="@+id/tvTipValue"
 		android:layout_width="wrap_content"
@@ -82,7 +93,7 @@
 		android:text=""
 		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:textColor="#FF0000"
-		android:textColorHighlight="#0000A0" />
+		android:textStyle="bold" />
 	<TextView
 		android:id="@+id/tvTipLabel"
 		android:layout_width="wrap_content"

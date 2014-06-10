@@ -19,4 +19,4 @@ Completed user stories:
  
 Walkthrough of all user stories:
 
-![TipCalculator.gif](C:\Mobile DEV\Android Bootcamp\TipCalculator.gif)
+![Tip Calculator](./TipCalculator.gif)

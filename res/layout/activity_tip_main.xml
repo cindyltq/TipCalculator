@@ -14,7 +14,7 @@
 		android:layout_alignBottom="@+id/etAmount"
 		android:drawableRight="@drawable/dollar"
 		android:text="@string/enter_amount"
-		android:textAppearance="?android:attr/textAppearanceLarge" />
+		android:textAppearance="?android:attr/textAppearanceMedium" />
 	<EditText
 		android:id="@+id/etAmount"
 		android:layout_width="wrap_content"
@@ -45,6 +45,8 @@
 			android:background="#33B5E5"
 			android:onClick="calculateTip10"
 			android:text="@string/tenPercent"
+			android:textStyle="bold"
+			android:radius="10dp"
 			android:textColor="#FFFFFF" />
 		<Button
 			android:id="@+id/bt15"
@@ -55,6 +57,8 @@
 			android:textColor="#FFFFFF"
 			android:background="#33B5E5"
 			android:onClick="calculateTip15"
+			android:textStyle="bold"
+			android:radius="10dp"
 			android:text="@string/fifteenPercent" />
 		<Button
 			android:id="@+id/bt20"
@@ -64,6 +68,8 @@
 			android:onClick="calculateTip20"
 			android:textColor="#FFFFFF"
 			android:background="#33B5E5"
+			android:textStyle="bold"
+			android:radius="10dp"
 			android:text="@string/twentyPercent" />
 	</LinearLayout>
 	<TextView
@@ -75,6 +81,7 @@
 		android:layout_marginBottom="20dp"
 		android:text="@string/percentage_is"
 		android:textAppearance="?android:attr/textAppearanceLarge" />
+	
 	<SeekBar
 		android:id="@+id/sbPercentage"
 		android:layout_width="match_parent"
@@ -82,24 +89,39 @@
 		android:layout_below="@+id/tvPercentage"
 		android:max="100"
 		android:progress="30" />
-	
-	<TextView
-		android:id="@+id/tvTipValue"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:layout_marginBottom="76dp"
-		android:layout_toRightOf="@+id/tvTipLabel"
-		android:text=""
-		android:textAppearance="?android:attr/textAppearanceLarge"
-		android:textColor="#FF0000"
-		android:textStyle="bold" />
-	<TextView
-		android:id="@+id/tvTipLabel"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignBottom="@+id/tvTipValue"
-		android:layout_toLeftOf="@+id/etAmount"
-		android:text="@string/tip_is"
-		android:textAppearance="?android:attr/textAppearanceLarge" />
+      <TextView
+      	android:id="@+id/tvTotalLabel"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_alignLeft="@+id/sbPercentage"
+      	android:layout_alignParentBottom="true"
+      	android:layout_marginBottom="40dp"
+      	android:text="@string/total_amount"
+      	android:textAppearance="?android:attr/textAppearanceMedium" />
+      <TextView
+      	android:id="@+id/tvTipValue"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_alignBottom="@+id/tvTipLabel"
+      	android:layout_toRightOf="@+id/tvPercentage"
+      	android:textAppearance="?android:attr/textAppearanceLarge"
+      	android:textColor="#FF0000"
+      	android:textStyle="bold" />
+      <TextView
+      	android:id="@+id/tvTotalValue"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_alignBottom="@+id/tvTotalLabel"
+      	android:layout_toRightOf="@+id/tvPercentage"
+      	android:textAppearance="?android:attr/textAppearanceLarge"
+      	android:textColor="#FF0000"
+      	android:textStyle="bold" />
+      <TextView
+      	android:id="@+id/tvTipLabel"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_above="@+id/tvTotalValue"
+      	android:layout_alignRight="@+id/tvTotalLabel"
+      	android:text="@string/tip_is"
+      	android:textAppearance="?android:attr/textAppearanceMedium" />
 </RelativeLayout>

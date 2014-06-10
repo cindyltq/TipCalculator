@@ -24,9 +24,11 @@ public final class R {
     public static final class drawable {
         public static final int dollar=0x7f020000;
         public static final int ic_launcher=0x7f020001;
+        public static final int mybutton=0x7f020002;
+        public static final int small_dollar=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000a;
+        public static final int action_settings=0x7f08000c;
         public static final int bt10=0x7f080003;
         public static final int bt15=0x7f080004;
         public static final int bt20=0x7f080005;
@@ -35,8 +37,10 @@ public final class R {
         public static final int sbPercentage=0x7f080007;
         public static final int tvEnterAmount=0x7f080000;
         public static final int tvPercentage=0x7f080006;
-        public static final int tvTipLabel=0x7f080009;
-        public static final int tvTipValue=0x7f080008;
+        public static final int tvTipLabel=0x7f08000a;
+        public static final int tvTipValue=0x7f080009;
+        public static final int tvTotalLabel=0x7f080008;
+        public static final int tvTotalValue=0x7f08000b;
     }
     public static final class layout {
         public static final int activity_tip_main=0x7f030000;
@@ -54,6 +58,7 @@ public final class R {
         public static final int select_percentage=0x7f050007;
         public static final int tenPercent=0x7f050004;
         public static final int tip_is=0x7f050002;
+        public static final int total_amount=0x7f05000a;
         public static final int twentyPercent=0x7f050006;
     }
     public static final class style {

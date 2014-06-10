@@ -137,6 +137,9 @@ public class TipMainActivity extends Activity
 	    @Override
 	    public void onStartTrackingTouch(SeekBar seekBar)
 	    {
+		deSelectButton(button15);
+		deSelectButton(button10);
+		deSelectButton(button20);
 		
 	    }
 

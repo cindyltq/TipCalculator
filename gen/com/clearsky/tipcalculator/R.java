@@ -38,9 +38,9 @@ public final class R {
         public static final int tvEnterAmount=0x7f080000;
         public static final int tvPercentage=0x7f080006;
         public static final int tvTipLabel=0x7f08000a;
-        public static final int tvTipValue=0x7f080009;
+        public static final int tvTipValue=0x7f08000b;
         public static final int tvTotalLabel=0x7f080008;
-        public static final int tvTotalValue=0x7f08000b;
+        public static final int tvTotalValue=0x7f080009;
     }
     public static final class layout {
         public static final int activity_tip_main=0x7f030000;

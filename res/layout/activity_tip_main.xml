@@ -98,24 +98,15 @@
       	android:layout_marginBottom="40dp"
       	android:text="@string/total_amount"
       	android:textAppearance="?android:attr/textAppearanceMedium" />
-      <TextView
-      	android:id="@+id/tvTipValue"
-      	android:layout_width="wrap_content"
-      	android:layout_height="wrap_content"
-      	android:layout_alignBottom="@+id/tvTipLabel"
-      	android:layout_toRightOf="@+id/tvPercentage"
-      	android:textAppearance="?android:attr/textAppearanceLarge"
-      	android:textColor="#FF0000"
-      	android:textStyle="bold" />
-      <TextView
-      	android:id="@+id/tvTotalValue"
-      	android:layout_width="wrap_content"
-      	android:layout_height="wrap_content"
-      	android:layout_alignBottom="@+id/tvTotalLabel"
-      	android:layout_toRightOf="@+id/tvPercentage"
-      	android:textAppearance="?android:attr/textAppearanceLarge"
-      	android:textColor="#FF0000"
-      	android:textStyle="bold" />
+        <TextView
+        	android:id="@+id/tvTotalValue"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignBottom="@+id/tvTotalLabel"
+        	android:layout_toRightOf="@+id/tvTotalLabel"
+        	android:textAppearance="?android:attr/textAppearanceLarge"
+        	android:textColor="#FF0000"
+        	android:textStyle="bold" />
       <TextView
       	android:id="@+id/tvTipLabel"
       	android:layout_width="wrap_content"
@@ -124,4 +115,15 @@
       	android:layout_alignRight="@+id/tvTotalLabel"
       	android:text="@string/tip_is"
       	android:textAppearance="?android:attr/textAppearanceMedium" />
+      <TextView
+        android:id="@+id/tvTipValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTipLabel"
+        android:layout_toRightOf="@+id/tvTipLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+    
+      
 </RelativeLayout>

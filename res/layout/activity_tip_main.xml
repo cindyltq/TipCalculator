@@ -22,7 +22,7 @@
 		android:layout_alignParentTop="true"
 		android:layout_marginTop="29dp"
 		android:layout_toRightOf="@+id/tvEnterAmount"
-		android:inputType="number"
+		android:inputType="numberDecimal"
 		android:ems="15" 
 		android:imeOptions="actionDone"/>
 	<LinearLayout
@@ -43,10 +43,11 @@
 			android:layout_marginLeft="15dp"
 			android:layout_marginRight="15dp"
 			android:background="#33B5E5"
-			android:onClick="calculateTip10"
+			android:onClick="onButtonClick"
 			android:text="@string/tenPercent"
 			android:textStyle="bold"
 			android:radius="10dp"
+			android:tag="10"
 			android:textColor="#FFFFFF" />
 		<Button
 			android:id="@+id/bt15"
@@ -56,20 +57,22 @@
 			android:layout_marginRight="15dp"
 			android:textColor="#FFFFFF"
 			android:background="#33B5E5"
-			android:onClick="calculateTip15"
+			android:onClick="onButtonClick"
 			android:textStyle="bold"
 			android:radius="10dp"
+			android:tag="15"
 			android:text="@string/fifteenPercent" />
 		<Button
 			android:id="@+id/bt20"
 			style="?android:attr/buttonStyle"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:onClick="calculateTip20"
+			android:onClick="onButtonClick"
 			android:textColor="#FFFFFF"
 			android:background="#33B5E5"
 			android:textStyle="bold"
 			android:radius="10dp"
+			android:tag="20"
 			android:text="@string/twentyPercent" />
 	</LinearLayout>
 	<TextView

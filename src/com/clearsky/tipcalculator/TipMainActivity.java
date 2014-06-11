@@ -52,7 +52,17 @@ public class TipMainActivity extends Activity
 	etAmount.setOnEditorActionListener(getOnEditorActionListener());
     }
 
-    public void calculateTip10(View v)
+    public void onButtonClick(View v)
+    {
+	if(v.getTag().equals("10"))
+	    calculateTip10();
+	else if (v.getTag().equals("15"))
+	    calculateTip15();
+	else if (v.getTag().equals("20"))
+	    calculateTip20();
+    }
+    
+    public void calculateTip10()
     {	
 	selectButton(button10);
 	deSelectButton(button15);
@@ -61,7 +71,7 @@ public class TipMainActivity extends Activity
 	calculateTips(10);
     }
 
-    public void calculateTip15(View v)
+    public void calculateTip15()
     {
 	selectButton(button15);
 	deSelectButton(button10);
@@ -70,7 +80,7 @@ public class TipMainActivity extends Activity
 	calculateTips(15);
     }
 
-    public void calculateTip20(View v)
+    public void calculateTip20()
     {
 	selectButton(button20);
 	deSelectButton(button15);
